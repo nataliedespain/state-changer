@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.header, .footer {
+  width: 100vw;
+  height: 65px;
+  background: lightblue;
+}
+
+.body {
+  margin-top: 18%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
