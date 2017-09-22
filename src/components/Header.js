@@ -1,10 +1,20 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
-const Header = ({name}) => {
+const Header = (props) => {
   return (
     <div className='header'>
-      <h1>{name}</h1>
+      <h1>{props.state.name}</h1>
     </div>
   )
 }
-export default Header
+
+const mapStateToProps = (state) => {
+  return {
+    state
+  }
+}
+
+export default connect(
+  mapStateToProps
+)(Header)
